@@ -68,27 +68,12 @@ INSERT INTO employees (id, managerId, name) VALUES (5, 2, 'Wisdom Kamau');
 Then this Query selects employees who are not managers: 
 SELECT name FROM employees WHERE id NOT IN (SELECT managerId FROM employees WHERE managerId IS NOT NULL);
 In my case as in the SQL employees table:  
+
 name
 
- 
-  Edit
-  Copy
-  Delete
 Mutua
- 
-  Edit
-  Copy
-  Delete
 Johnson
- 
-  Edit
-  Copy
-  Delete
 Ann Mutinda Wanjiru
- 
-  Edit
-  Copy
-  Delete
 Wisdom Kamau
 
 4.	You work for a startup that makes an online presentation software. You have an event log that records every time a user inserted an image into a presentation. (One user can insert multiple images.) The event_log SQL table looks like this:
